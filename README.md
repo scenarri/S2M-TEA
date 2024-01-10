@@ -31,10 +31,10 @@ The released code supports [PGD](https://arxiv.org/abs/1706.06083), [MI](https:/
 
 ## Acknowledgement
 
-This repository benefits a lot from the work listed below:
+This repository benefits a lot from the works listed below:
 
 [Harry24k/adversarial-attacks-pytorch](https://github.com/Harry24k/adversarial-attacks-pytorch) <br>
 [ZhengyuZhao/TransferAttackEval](https://github.com/ZhengyuZhao/TransferAttackEval)<br>
-[benjaminlewis-afrl/SAMPLE_dataset_public](https://github.com/benjaminlewis-afrl/SAMPLE_dataset_public)
+[benjaminlewis-afrl/SAMPLE_dataset_public](https://github.com/benjaminlewis-afrl/SAMPLE_dataset_public)<br>
 [YonghaoXu/UAE-RS](https://github.com/YonghaoXu/UAE-RS)
 
