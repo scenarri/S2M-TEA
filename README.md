@@ -8,7 +8,7 @@ Pytorch 2.0.1, torchvision 0.15.2, kornia, skopt (scikit-optimize). <br>
 
 ## Resource
 
-Please download [model weights](https://pan.baidu.com/s/1-Ktj6wdxcGZ5BdSRZDZQ1Q?pwd=5631) and the SAMPLE synthetic-measured [data pairs](https://pan.baidu.com/s/11RNkx0ArmktF-pVY829y0Q?pwd=5631) and put them into './models/' and './dataset/'. <br>
+Please download [model weights](https://pan.baidu.com/s/1-Ktj6wdxcGZ5BdSRZDZQ1Q?pwd=5631) and the [SAMPLE synthetic-measured data pairs](https://pan.baidu.com/s/11RNkx0ArmktF-pVY829y0Q?pwd=5631) and put them into './models/' and './dataset/', respectively. <br>
 
 
 ## Synthetic-to-Measured Transfer (S2M) evaluation of sSurrogates and attck algorithms 
