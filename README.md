@@ -8,7 +8,7 @@ Pytorch 2.0.1, torchvision 0.15.2, kornia, skopt (scikit-optimize). <br>
 
 ## Preparation
 
-Please download [model weights](https://pan.baidu.com/s/1-Ktj6wdxcGZ5BdSRZDZQ1Q?pwd=5631) and the [SAMPLE synthetic-measured data pairs](https://pan.baidu.com/s/11RNkx0ArmktF-pVY829y0Q?pwd=5631). They are meant to be located at './models/' and './dataset/', respectively. <br>
+Please download [model weights](https://pan.baidu.com/s/1-Ktj6wdxcGZ5BdSRZDZQ1Q?pwd=5631) and the [SAMPLE synthetic-measured data pairs](https://pan.baidu.com/s/11RNkx0ArmktF-pVY829y0Q?pwd=5631), and arrange them to './models/' and './dataset/' respectively. <br>
 
 
 ## Synthetic-to-Measured Transfer (S2M) evaluation
@@ -24,7 +24,7 @@ python transfer_eval.py --surrogate RN18_FT --AS
 ```
 or input customized paras. with --beta and --decay if interested.
 
-You can also load a surrogate by trigger --local and appoint the file name (in './FT_result/') with --surrogate, like
+You can also load a surrogate by triggering --local and appointing the file name (in './FT_result/') with --surrogate, like
 ```
 python transfer_eval.py --surrogate RN18_seed_12345.pth --local
 ```
@@ -33,18 +33,15 @@ python transfer_eval.py --surrogate RN18_seed_12345.pth --local
 ## Perform a local Transferability Estimation Attack (TEA)
 
 This prints the architecture hyper-parameters and saves the finetuned weights at './FT_result/', and these two surrogates (FT and FT+AS) will be evaluated with --test being triggered:
-
 ```
 python TEA.py  --surrogate RN18 --sigmaFT 0.2 --sigmaAS 0.3 --lambda_ 1. --samples 5 --test
 ```
-Here samples is the number of Gaussian neighbors being sampled during loss calculation.  A larger one leads to better stability and a smaller one favors lower memory usage.
+Here '--samples' is the number of Gaussian neighbors being sampled during loss calculation.  A larger one leads to better stability and a smaller one favors lower memory usage.
 
 Run architecture selection for a given surrogate (in './FT_result/'):
-
 ```
 python TEA.py --name RN18_seed_12345.pth --test
 ```
-
 
 ## Acknowledgements
 
