@@ -37,7 +37,7 @@ This prints the architecture hyper-parameters and saves the finetuned weights at
 ```
 python TEA.py  --surrogate RN18 --sigmaFT 0.2 --sigmaAS 0.3 --lambda_ 1. --samples 5 --test
 ```
-Here samples is the number of Gaussian neighbors being samples during loss calculation.  A larger one leads to better stability and a smaller one favors lower memory usage.
+Here samples is the number of Gaussian neighbors being sampled during loss calculation.  A larger one leads to better stability and a smaller one favors lower memory usage.
 
 Run architecture selection for a given surrogate (in './FT_result/'):
 
