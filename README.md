@@ -1,6 +1,6 @@
 # S2M-TEA
 
-This is the Pytorch implementation for the paper "Towards Assessing the Synthetic-to-Measured Adversarial Vulnerability of SAR ATR" (under review).  <br>
+This is the Pytorch implementation for the paper "[Towards Assessing the Synthetic-to-Measured Adversarial Vulnerability of SAR ATR](https://arxiv.org/abs/2401.17038)" (under review).  <br>
 
 ## Environment
 
