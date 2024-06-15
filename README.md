@@ -1,6 +1,6 @@
 # S2M-TEA
 
-This is the Pytorch implementation for the paper "[Towards Assessing the Synthetic-to-Measured Adversarial Vulnerability of SAR ATR](https://arxiv.org/abs/2401.17038)" (under review).  <br>
+This is the Pytorch implementation for "[Towards Assessing the Synthetic-to-Measured Adversarial Vulnerability of SAR ATR]([https://arxiv.org/abs/2401.17038](https://www.sciencedirect.com/science/article/pii/S092427162400234X))", accepted by ISPRS Journal of Photogrammetry and Remote Sensing.  <br>
 
 ## Environment
 
@@ -41,6 +41,19 @@ Here '--samples' is the number of Gaussian neighbors being sampled during loss c
 Run architecture selection for a given surrogate (in './FT_result/'):
 ```
 python TEA.py --name RN18_seed_12345.pth --test
+```
+
+## Citation
+If you find our paper and this repository useful, please consider citing our work.
+```bibtex
+@ARTICLE{pengs2mtea,
+  author={Bowen Peng and Bo Peng and Jingyuan Xia and Tianpeng Liu and Yongxiang Liu and Li Liu},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing}, 
+  title={Towards assessing the synthetic-to-measured adversarial vulnerability of SAR ATR}, 
+  volume = {214},
+  pages = {119-134},
+  year = {2024},
+  doi={https://doi.org/10.1016/j.isprsjprs.2024.06.004}}
 ```
 
 ## Acknowledgements
